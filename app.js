@@ -67,14 +67,17 @@ saveSourceBtn.addEventListener('click', () => {
 });
 
 saveOutputBtn.addEventListener('click', () => {
-  const htmlToSave = (
-    '<html><head>' +
-    '<link rel="stylesheet" href="css/styles.css">' +
-    (currentView == 'slide' ? slideExtraHeader : '') +
-    '</head><body>' +
-    outputEl.innerHTML +
-    '</body></html>'
-  );
+  const htmlToSave = `
+<html>
+    <head>
+    <link rel="stylesheet" href="css/styles.css">
+    ${ currentView == 'slide' ? slideExtraHeader : '' }
+     </head>
+     <body>
+   	${ outputEl.innerHTML }
+     </body>
+</html>
+`;
   const blob = new Blob([htmlToSave], { type: 'text/html' });
   saveAs(blob, 'output.html');
 });
