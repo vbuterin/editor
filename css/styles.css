@@ -23,7 +23,7 @@ textarea,
 }
 
 #output {
-  width: 738px;
+  width: 745px;
 }
 
 textarea {
@@ -32,55 +32,4 @@ textarea {
 
 button:hover {
   background-color: #0069d9;
-}
-
-.slide {
-    height: 550px;
-    padding: 20px;
-    margin: 10px;
-    page-break-after: always;
-    img {{
-        max-width:75%;
-        max-height: 100mm;
-        margin: auto;
-        display: block;
-    }}
-    table {{
-        border-collapse: collapse;
-        margin-left: auto;
-        margin-right: auto;
-        border-style: hidden;
-    }}
-    th {{
-        padding: 5px;
-        padding-right: 30px;
-        border: 1px solid;
-    }}
-    td {{
-        padding: 5px;
-        padding-right: 30px;
-        border: 1px solid;
-    }}
-    .content-container {{
-        position: relative;
-        top: -50%;
-        transform: translateY(80mm);
-        padding: 20px;
-    }}
-    h1, h2, h3, h4, h5, h6 {{
-        text-align: center;
-        width: 100%;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }}
-    p, ul, ol {{
-        line-height: 1.5;
-        text-align: left;
-    }}
-    ul, ol {{
-        padding-left: 1.5em;
-    }}
-    ul li, ol li {{
-        margin-bottom: 10px;
-    }}
 }
