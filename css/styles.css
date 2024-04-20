@@ -5,25 +5,35 @@
 #editor {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 2rem;
-  height: calc(100vh - 10rem);
-  padding: 20px;
+  gap: 4rem;
+  height: calc(100vh - 14rem);
+  padding: 40px;
   padding-bottom: 100px;
+  width: 1640px;
+  margin: auto;
 }
 
 #buttons {
- padding: 30px;
+  padding-top: 10px;
+}
+
+button {
+  padding: 5px;
+  margin-right: 5px !important;
 }
 
 textarea,
 #output {
   resize: none;
   overflow-y: scroll !important;
-  height: calc(100vh - 10rem);
+  width: 765px;
+  height: calc(100vh - 16rem);
+  font-size: 125% !important;
 }
 
 #output {
-  width: 745px;
+  width: 765px;
+  padding-right: 20px;
 }
 
 textarea {
