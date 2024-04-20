@@ -53,3 +53,9 @@ function updateOutput () {
 
 // Add event listener for showing compiled HTML in output div
 sourceEl.addEventListener('input', updateOutput);
+
+// Show an alert message when closing the window
+window.onbeforeunload = function (event) {
+    event.preventDefault();
+    event.returnValue = '';
+ };
