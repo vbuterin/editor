@@ -22,7 +22,7 @@ button {
   margin-right: 5px !important;
 }
 
-textarea,
+#source,
 #output {
   resize: none;
   overflow-y: scroll !important;
@@ -36,10 +36,18 @@ textarea,
   padding-right: 20px;
 }
 
-textarea {
+#source {
   white-space: pre-wrap;
+  padding: 3px;
 }
 
 button:hover {
   background-color: #0069d9;
+}
+
+.blue {
+    color: blue;
+}
+.red {
+    color: #880088;
 }
