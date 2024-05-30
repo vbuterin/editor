@@ -29,7 +29,7 @@ if (isIE && navigator.msSaveOrOpenBlob) {
 
 // Add event listeners for saving files
 saveSourceBtn.addEventListener('click', () => {
-  const textToSave = sourceEl.value;
+  const textToSave = sourceEl.innerText;
   const lines = textToSave.split('\n');
   const title = lines[0].replace(/^#+\s*/, '').replace(/[^\w]/gi, '_'); // remove # and special chars
   const filename = `${title.trim().toLowerCase()}.md`;
@@ -38,7 +38,7 @@ saveSourceBtn.addEventListener('click', () => {
 });
 
 saveOutputBtn.addEventListener('click', () => {
-  const lines = sourceEl.value.split('\n');
+  const lines = sourceEl.innerText.split('\n');
   const title = lines[0].replace(/^#+\s*/, '').replace(/[^\w]/gi, '_'); // remove # and special chars
   const filename = `${title.trim().toLowerCase()}.html`;
   const blob = new Blob([outputEl.innerHTML], { type: 'text/html' });
