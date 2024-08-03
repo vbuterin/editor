@@ -64,7 +64,7 @@ function colorTextfield() {
         .replace(/\[([^\]]*)\]\((https?:\/\/[^\)]+)\)/g, '<span class="blue">[$1]($2)</span>')
         .replace(/^(##* .+)/gm, '<span class="red">$1</span>')
         .replace(/(\*\*.+\*\*)/gm, '<b>$1</b>')
-        .replace(/(\_.+\_)/gm, '<i>$1</i>');
+        .replace(/(\_[^_\n]+\_)/gm, '<i>$1</i>');
 
     sourceEl.innerHTML = highlightedContent;
 
